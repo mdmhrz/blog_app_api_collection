@@ -5,7 +5,7 @@ meta {
 }
 
 get {
-  url: http://localhost:5000/api/v1/post?page=1&limit=2&sortBy=title
+  url: {{baseUrl}}/api/v1/post?page=1&limit=2&sortBy=title
   body: text
   auth: inherit
 }
@@ -32,4 +32,5 @@ body:text {
 
 settings {
   encodeUrl: true
+  timeout: 0
 }
