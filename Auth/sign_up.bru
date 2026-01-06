@@ -1,0 +1,29 @@
+meta {
+  name: sign_up
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:5000/api/auth/sign-up/email
+  body: json
+  auth: inherit
+}
+
+headers {
+  Origin: http://localhost:4000
+}
+
+body:json {
+  {
+      "name": "Mobarak Hossain",
+      "email": "mobarake@example.com",
+      "password": "password1234",
+      "image": "https://example.com/image.png",
+      "phone": "01824975616"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

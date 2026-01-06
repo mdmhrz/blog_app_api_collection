@@ -1,0 +1,24 @@
+meta {
+  name: create-post
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:5000/api/v1/post
+  body: text
+  auth: inherit
+}
+
+body:text {
+  {
+    "title": "This is post title",
+    "content": "This is post content",
+    "tags": ['web', 'next', 'level'],
+    "authorId": "asfdjfsd"
+  }
+}
+
+settings {
+  encodeUrl: true
+}
