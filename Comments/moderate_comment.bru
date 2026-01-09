@@ -1,0 +1,22 @@
+meta {
+  name: moderate_comment
+  type: http
+  seq: 6
+}
+
+patch {
+  url: {{baseUrl}}/api/v1/comment/22e7351e-1d99-4590-b247-170d67981d97/moderate
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "status": "APPROVED"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,16 @@
+meta {
+  name: get_comment_by_id
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/api/v1/comment/2b89ef04-642b-4835-8c21-c986f968879b
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,16 @@
+meta {
+  name: get_my_posts
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/api/v1/post/my-posts
+  body: none
+  auth: none
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

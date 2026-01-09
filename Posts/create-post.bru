@@ -6,16 +6,15 @@ meta {
 
 post {
   url: {{baseUrl}}/api/v1/post
-  body: text
+  body: json
   auth: inherit
 }
 
-body:text {
+body:json {
   {
-    "title": "This is post title",
-    "content": "This is post content",
-    "tags": ['web', 'next', 'level'],
-    "authorId": "asfdjfsd"
+    "title": "This is post title another post",
+    "content": "This is post contfdfefnt",
+    "tags": ["web", "next", "level"]
   }
 }
 

@@ -5,29 +5,20 @@ meta {
 }
 
 get {
-  url: {{baseUrl}}/api/v1/post?page=1&limit=2&sortBy=title
-  body: text
+  url: {{baseUrl}}/api/v1/post
+  body: none
   auth: inherit
 }
 
 params:query {
-  page: 1
-  limit: 2
-  sortBy: title
+  ~page: 1
+  ~limit: 2
+  ~sortBy: title
   ~search: TEXT
   ~tags: ph
   ~isFeatured: fals
   ~status: ARCHIVED
   ~sortOrder: asc
-}
-
-body:text {
-  {
-    "title": "This is post title",
-    "content": "This is post content",
-    "tags": ['web', 'next', 'level'],
-    "authorId": "asfdjfsd"
-  }
 }
 
 settings {

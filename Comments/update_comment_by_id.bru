@@ -1,0 +1,23 @@
+meta {
+  name: update_comment_by_id
+  type: http
+  seq: 5
+}
+
+patch {
+  url: {{baseUrl}}/api/v1/comment/22e7351e-1d99-4590-b247-170d67981d97
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "content": "this is updated comment",
+    "status": "REJECTED"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
