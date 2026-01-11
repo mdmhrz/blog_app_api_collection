@@ -1,0 +1,24 @@
+meta {
+  name: update_user_post
+  type: http
+  seq: 5
+}
+
+patch {
+  url: {{baseUrl}}/api/v1/post/d9858047-785f-4409-9843-412e2aad231c
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "title": "This is chANGE TITLE 2",
+    "content": "This is post contfdfefnt",
+    "tags": ["web", "next", "level"]
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
